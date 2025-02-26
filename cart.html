@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyCart - Tu Carrito</title>
+    <link rel="stylesheet" href="style_cart.css"> <!-- Enlaza el archivo CSS para estilos -->
+    <script defer src="animation_cart.js"></script> <!-- Enlaza el archivo JavaScript para interactividad -->
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="header-layout">
+            <a href="index.html" id="Logo">
+                <img src="logo.png">
+            </a>
+            <h1>HappyCart: fill your cart, fill your day</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="items.html">All our products</a></li>
+                <li><a href="cart.html">Your happy cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Página del Carrito -->
+    <main>
+        <!-- Contenedor -->
+        <div id="cart-container"></div>
+        <div id="empty-cart-message" style="display: none;">Tu carrito está vacío.</div>
+
+        <!-- Total a Pagar -->
+        <div id="total-container">
+            <h3>Total a pagar:</h3>
+            <p id="total">$0</p>
+            <button type="submit">Pagar</button>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 HappyCart. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100087617270742"><img src="facebook.png"></a>
+            <a href="#"><img src="x.png"></a>
+            <a href="https://www.threads.net/@my26maicol?xmt=AQGzttFlD7j3MRIhze0mOmGUQfZ_5J-pPxDCXUt5W7pHtQQ"><img src="instagram.png"></a>
+        </div>
+    </footer>
+</body>
+</html>
