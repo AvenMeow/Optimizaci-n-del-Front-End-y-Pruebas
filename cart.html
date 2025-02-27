@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HappyCart - Tu Carrito</title>
-    <link rel="stylesheet" href="style_cart.css"> <!-- Enlaza el archivo CSS para estilos -->
-    <script defer src="animation_cart.js"></script> <!-- Enlaza el archivo JavaScript para interactividad -->
+    <link rel="stylesheet" href="style_cart.min.css"> <!-- Enlaza el archivo CSS minificado -->
+    <script defer src="animation_cart.min.js"></script> <!-- Enlaza el archivo JavaScript minificado -->
 </head>
 <body>
     <!-- Encabezado -->
     <header>
         <div class="header-layout">
             <a href="index.html" id="Logo">
-                <img src="logo.png">
+                <img src="logo.webp" srcset="logo.webp 800w, logo.webp 1200w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" alt="Logotipo de la empresa en colores corporativos" loading="lazy">
             </a>
             <h1>HappyCart: fill your cart, fill your day</h1>
         </div>
@@ -42,9 +42,12 @@
     <footer>
         <p>&copy; 2024 HappyCart. Todos los derechos reservados.</p>
         <div class="social-media">
-            <a href="https://www.facebook.com/profile.php?id=100087617270742"><img src="facebook.png"></a>
-            <a href="#"><img src="x.png"></a>
-            <a href="https://www.threads.net/@my26maicol?xmt=AQGzttFlD7j3MRIhze0mOmGUQfZ_5J-pPxDCXUt5W7pHtQQ"><img src="instagram.png"></a>
+            <a href="https://www.facebook.com/profile.php?id=100087617270742">
+                <img src="facebook.webp" srcset="facebook.webp 800w, facebook.webp 1200w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" alt="Logo de Facebook en colores azules" loading="lazy"></a>
+            <a href="#">
+                <img src="x.webp" srcset="x.webp 800w, x.webp 1200w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" alt="Logo de X en colores azules" loading="lazy"></a>
+            <a href="https://www.threads.net/@my26maicol?xmt=AQGzttFlD7j3MRIhze0mOmGUQfZ_5J-pPxDCXUt5W7pHtQQ">
+                <img src="instagram.webp" srcset="instagram.webp 800w, instagram.webp 1200w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" alt="Logo de Instagram en colores azules" loading="lazy"></a>
         </div>
     </footer>
 </body>

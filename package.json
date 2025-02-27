@@ -1,0 +1,19 @@
+{
+  "name": "optimizaci-n-del-front-end-y-pruebas",
+  "version": "1.0.0",
+  "description": "U2. Actividad de aprendizaje para Actividad 2. Optimización del Front-End y Pruebas:",
+  "main": "animation_index.min.js",
+  "scripts": {
+    "test": "mocha **/*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "clean-css-cli": "^5.6.3",
+    "mocha": "^11.1.0",
+    "terser": "^5.39.0"
+  }
+}
