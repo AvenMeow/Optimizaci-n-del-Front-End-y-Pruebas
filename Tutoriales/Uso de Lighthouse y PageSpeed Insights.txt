@@ -1,0 +1,9 @@
+1. Utiliza Lighthouse en Chrome DevTools (F12 o Ctrl+Shift+I en Chrome) o PageSpeed Insights (https://pagespeed.web.dev) para medir el rendimiento del sitio web
+
+NOTA: Si quieres que Lighthouse o PageSpeed Insights analicen tu sitio, debes subir tu proyecto a una plataforma gratuita de hosting temporal. Una opción recomendada es GitHub Pages, donde puedes crear un repositorio en GitHub y subir tus archivos HTML, CSS, y JavaScript. Desde ahí, GitHub genera una URL pública
+
+> https://avenmeow.github.io/Front_End_Optimization_Testing/ (Página de inicio - Home)
+
+> https://avenmeow.github.io/Front_End_Optimization_Testing/items.html (Página de productos - Items)
+
+> https://avenmeow.github.io/Front_End_Optimization_Testing/cart.html (Página de carrito de compras - Cart)

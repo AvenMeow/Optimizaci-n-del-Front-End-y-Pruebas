@@ -1,0 +1,2 @@
+1. Implementa lazy loading para imágenes y otros recursos pesados que no requieren cargarse de inmediato al abrir la página. Configura estos elementos para que se carguen solo cuando el usuario se desplace hacia ellos
+<img src="ruta-de-la-imagen.jpg" alt="Descripción de la imagen" loading="lazy">

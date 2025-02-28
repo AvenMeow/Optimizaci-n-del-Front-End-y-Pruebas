@@ -1,0 +1,52 @@
+VIDEOTUTORIAL: https://www.youtube.com/watch?v=MLTRHc5dk6s
+1. Descarga Node.js en tu ordenador: https://nodejs.org/en
+node -v (Verifica la instalación de Node.js desde la terminal de comandos)
+
+npm -v (Verifica la instalación de npm desde la terminal de comandos)
+
+2. Accede al directorio de tu proyecto e inicializa con npm desde la terminal
+cd /ruta/a/mi-proyecto
+
+npm init -y (Crea un archivo package.json para gestionar las dependencias y scripts)
+
+3. Instala Mocha y Chai
+npm i mocha chai --save-dev (Comando para la instalación de Mocha y Chai)
+
+4. Edita tu archivo de configuración package.json
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha **/*.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "Simple app for testing",
+  "type": "module",
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3"
+  }
+}
+
+5. Crea un archivo de pruebas
+script.test.js (Crea un archivo llamado **.test.js. Este archivo contendrá las pruebas unitarias)
+
+6. Escribe una prueba unitaria básica en tu archivo de pruebas para comprobar el funcionamiento del JavaScript en tu proyecto
+import { expect } from 'chai';
+
+describe('Cart functionality', function() {
+  it('should add an item to the cart', function() {
+    addToCart('Apple');
+    expect(cart).to.include('Apple');
+  });
+
+  it('should increase the length of the cart when adding items', function() {
+    addToCart('Banana');
+    expect(cart.length).to.equal(2);
+  });
+});
+
+7. Desde la terminal, dentro del directorio de tu proyecto, ejecuta el siguiente comando para correr las pruebas:
+npm test

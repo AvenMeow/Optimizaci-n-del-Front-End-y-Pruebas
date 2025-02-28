@@ -1,0 +1,26 @@
+1. Descarga Node.js en tu ordenador: https://nodejs.org/en
+node -v (Verifica la instalación de Node.js desde la terminal de comandos)
+
+npm -v (Verifica la instalación de npm desde la terminal de comandos)
+
+2. Accede al directorio de tu proyecto e inicializa con npm desde la terminal
+cd /ruta/a/mi-proyecto
+
+npm init -y (Crea un archivo package.json en tu carpeta de proyecto para gestionar las dependencias y scripts)
+
+3. Instala Terser y Clean-css
+npm i terser --save-dev (Comando para la instalación de Terser)
+
+npm i clean-css-cli --save-dev (Comando para la instalación de Postcss)
+
+4. Ejecuta los comandos específicos para minificar JS
+npx terser script.js -o script.min.js (Comando para la minificación de tu archivo JavaScript)
+
+5. Ejecuta los comandos específicos para minificar CSS
+npx cleancss style.css -o style.min.css (Comando para la minificación de tu archivo CSS)
+
+NOTA: Si el archivo está en otra ubicación, puedes modificar el comando para señalar la ubicación exacta del archivo, por ejemplo: npx terser "ruta\a\animation_items.js" -o animation_items.min.js 
+
+6. Incluye los archivos minificados en tu proyecto
+<link rel="stylesheet" href="styles.min.css"> (Desde el archivo HTML)
+<script src="script.min.js" defer></script>
